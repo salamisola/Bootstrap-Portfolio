@@ -64,7 +64,7 @@ body {
   }
   
   #logo {
-    float: left;
+    float: right;
     width: 250px;
     height: 90px;
     font-family: Georgia, Times, "Times New Roman", serif;
@@ -78,7 +78,7 @@ body {
   }
   
   nav {
-    float: right;
+    float: left;
     margin-top: 25px;
   }
   
@@ -87,7 +87,7 @@ body {
     padding-left: 15px;
     margin-left: 15px;
     line-height: 18px;
-    color: #999;
+    color: grey(153, 153, 153, 0.082);
     text-decoration: none;
     border-left: 1px solid #efefef;
   }
@@ -116,7 +116,18 @@ body {
     line-height: 22px;
     border-bottom: 2px solid #eeeeee;
   }
-  
+
+  @media screen and (max-width: 768px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+  @media screen and (max-width:768px){
+    div{
+      background-color: blueviolet;
+    }
+  }
   /* main */
   
   #main-container {
@@ -214,4 +225,7 @@ body {
     cursor: pointer;
     background: #4aaaa5;
     border: 0 none;
+  }
+  #main-container{
+    background-color: yellow;
   }
